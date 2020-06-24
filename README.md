@@ -55,3 +55,10 @@ start.py | main function
  
  **talkthetalk.py**
    * **you_tell(new_cases,new_deaths):** - Function responsible of telling the user daily update in new cases. (Uses win32com library, that interact with the Microsoft Speech SDK to speak daily update).
+   
+   
+# Screenshots
+
+
+![](screenshots/dom.png)
+
