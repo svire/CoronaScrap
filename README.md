@@ -66,6 +66,6 @@ Result of **beautiful_table()** function:
 ![](screenshots/data2.png)
 
 After iterating through 2D array from previous picture, and seeding the database.
-![](mysql.png)
+![](screenshots/mysql.png)
 
 
