@@ -59,6 +59,9 @@ start.py | main function
    
 # Screenshots
 
-
+Inspecting the DOM...
 ![](screenshots/dom.png)
 
+Result of **beautiful_table()** function:
+
+![](screenshots/data2.png)
