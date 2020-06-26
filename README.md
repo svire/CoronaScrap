@@ -68,4 +68,25 @@ Result of **beautiful_table()** function:
 After iterating through 2D array from previous picture, and seeding the database.
 ![](screenshots/mysql.png)
 
+# Test
+
+Number of new cases in Belgium between 20-24 may.
+
+```
+SELECT date.daytimestring, s.country, s.new_cases, s.new_deaths FROM statistics s INNER JOIN date ON s.id=date.id where ( (s.country="Belgium") AND ( (date.daytimestring="2020-05-20") OR (date.daytimestring="2020-05-21") OR (date.daytimestring="2020-05-22") OR (date.daytimestring="2020-05-23") OR (date.daytimestring="2020-05-24") ) )
+
+```
+Result of query:
+
+Day | Country | New cases | New deaths
+------------ | ------------- | ------------- | -------------
+2020-05-20 | Belgium | 192 | 42
+2020-05-21 | Belgium | 252 | 36
+2020-05-22 | Belgium | 276 | 26
+2020-05-23 | Belgium | 299 | 25
+2020-05-24 | Belgium | 282 | 43
+
+ 
+
+
 
