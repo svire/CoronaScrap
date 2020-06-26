@@ -43,7 +43,7 @@ start.py | main function
   * **insert_row(self,max_id(date table),args)** - populate table `statistics` with current row (some country daily data)
   * **update_last()** - for a short period of time, there was the row "first case" so i updated the db with that row.
   
-**tables.py** - file consist N functions:
+**tables.py** - there are five functions:
   * **get_table()** - creates a BeautifulSoup object, search through the tree and then returns a table that consist data
   * **get_new_data()** - returns a tuple with new cases and deaths (worldwide) that is extracted from table( get_table() )
   * **count_rows()** - returns number of rows in the scraped table
