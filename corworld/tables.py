@@ -19,15 +19,17 @@ def get_table():
 #type(get_table())  <class 'bs4.element.ResultSet'>
  
 
+ 
 #Returns tuple with new cases and new deaths worldwide for current date
 def get_new_data():
     soup_object=BeautifulSoup(str(get_table()),'html.parser')
-    #last row of table,that consist sumarized data for whole world
-    last_row=soup_object.find_all('tr')[-1]
+    last_row=soup_object.find_all('tr',class_='total_row')[7]
     new_cases=last_row.find_all('td')[3].text.replace(',','').replace('+','')
-    new_deaths=last_row.find_all('td')[5].text.replace(',','').replace('+','')
-
-    return new_cases,new_deaths
+    new_deaths=last_row.find_all('td')[5].text.replace(',','').replace('+','')   
+    
+    return new_cases,new_deaths   
+   
+   
 
 #returns a number of rows in table i wanna scrap
 def count_rows():
