@@ -4,7 +4,7 @@
 
 This is a part of the data scraping project on Corona virus news and stats worlwide. Project goal was to collect data daily about Corona Virus cases and informations from different sources ( mostly websites / newspapers) in order to show its impact on economy, stock markets, unemployment (labour services), prices of oil, food price index etc.
 
-In this small application/script, data is scraped, collected, filtered and stored in local database. After that program will tell the user (Text-to-Speech) daily update in new cases worldwide. This part of application is written in Python and 4 libraries.
+In this small application/script, data is scraped, collected, filtered and stored in local database. After that program will tell the user (Text-to-Speech) daily update in new cases worldwide. This part of application is written in Python.
 
 ### Libraries:
 * BeautifulSoup
